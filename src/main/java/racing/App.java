@@ -2,6 +2,8 @@ package racing;
 
 import org.xml.sax.ext.Locator2;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  *
@@ -38,7 +40,16 @@ public class App
         Car car2 = new Car(engine);
 
         Engine engine2 = new Engine();
-        engine2.manufacturer = "VW"
+        engine2.manufacturer = "VW";
+
+                // incrementing / decrementing by 1
+        // fuelLevel1 = fuelLevel +1
+        //fuelLevel1 += fuelLevel
+        //fuelLevel1 ++
+
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        System.out.println("Input from user: " + text);
 
         car2.name = "Golf";
         car2.mileage = 10.1;
