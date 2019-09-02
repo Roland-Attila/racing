@@ -20,7 +20,7 @@ public class App
         car .maxSpeed = 180;
         car .fuelType = "Gasoline";
 
-        Engine engine = new Engine;
+        Engine engine = new Engine();
         engine.manufacturer = "Renault";
         engine.capacity = 1600;
         car.engine = engine;
@@ -34,7 +34,7 @@ public class App
 
 //        car.name = null;
 
-
+        car.accelerate(60 , 1);
 
         Car car2 = new Car();
         car2.name = "Golf";

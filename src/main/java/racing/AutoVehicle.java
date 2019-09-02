@@ -1,6 +1,6 @@
 package racing;
 
-public class AutoVehicle {
+public class AutoVehicle extends Vehicle{
     // has-a relationship
     Engine engine;
 }
