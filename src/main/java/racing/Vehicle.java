@@ -77,7 +77,20 @@ public class Vehicle {
     }
 
     public double accelerate (double speed) {
-        return accelerate(speed, durationInHours: 1)
+        return accelerate(speed, durationInHours: 1);
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", mileage=" + mileage +
+                ", maxSpeed=" + maxSpeed +
+                ", fuelType='" + fuelType + '\'' +
+                ", fuelLevel=" + fuelLevel +
+                ", travelDistance=" + travelDistance +
+                ", running=" + running +
+                '}';
     }
 }
 

@@ -29,6 +29,8 @@ public class App
         car.setMaxSpeed(180);
         car.setFuelType( "Gasoline");
 
+        System.out.println("Car object:" + car.toString());
+
         System.out.println(car.getName());
         System.out.println(car.getTravelDistance());
         System.out.println(car.isRunning());
@@ -37,7 +39,7 @@ public class App
 
 //        car.name = null;
 
-        car.accelerate( speed: 60, durationHours: 1);
+        car.accelerate(speed: 60, durationHours: 1);
 
         Car car2 = new Car(engine);
 
@@ -71,8 +73,11 @@ public class App
 //        System.out.println("Total count in car after setting car2: " + car.totalCount);
 //        System.out.println("Total count in car2: " + car2.totalCount);
 //        System.out.println("Total count in Car class: " + Car.totalCount);
-
-
+        HibridCar hibridCar = new HibridCar();
+        hibridCar.setName("cheater");
+        HibridCar.accelerate(sped: 60, durationInHours: 1)
+        System.out.println("Fuel level:" + hibridCar.getFuelLevel());
+        System.out.println("Traveled distance:" + hibridCar.getTravelDistance());
 
 
 
