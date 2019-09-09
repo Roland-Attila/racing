@@ -1,5 +1,6 @@
 package racing;
 
+import com.sun.jndi.ldap.LdapURL;
 import org.xml.sax.ext.Locator2;
 
 import java.util.Scanner;
@@ -17,25 +18,26 @@ public class App
         engine.manufacturer = "Renault";
         engine.capacity = 1600;
 
-
+    // this
 
         Car car = new Car(engine);
-        car .name = "Audi";
-        car .fuelLevel = 60;
-        car .mileage = 8.5;
-        car .doorCount = 5;
-        car .maxSpeed = 180;
-        car .fuelType = "Gasoline";
+        car.setName( "Audi" );
+        car.setFuelLevel(60);
+        car.setMileage(8.5);
+        car.doorCount = 5;
+        car.setTravelDistance(20);
+        car.setMaxSpeed(180);
+        car.setFuelType( "Gasoline");
 
-        System.out.println(car.name);
-        System.out.println(car.travelDistance);
-        System.out.println(car.running);
+        System.out.println(car.getName());
+        System.out.println(car.getTravelDistance());
+        System.out.println(car.isRunning());
 
-        car.name = "Skoda";
+        car.setName("Skoda");
 
 //        car.name = null;
 
-        car.accelerate(60 , 1);
+        car.accelerate( speed: 60, durationHours: 1);
 
         Car car2 = new Car(engine);
 
@@ -51,11 +53,28 @@ public class App
         String text = scanner.nextLine();
         System.out.println("Input from user: " + text);
 
-        car2.name = "Golf";
-        car2.mileage = 10.1;
+        car2.setName( "Golf");
+        car2.setMileage(10.1);
         car2.doorCount = 4;
-        car2.maxSpeed = 220;
-        System.out.println("Car2 name: " +car2.name);
-        System.out.println("Car2 name: " +car2.name);
+        car2.setMaxSpeed(220);
+        System.out.println("Car2 name: " +car2.getName());
+        System.out.println("Car2 name: " +car2.getName());
+
+        System.out.println("Static Variable examples");
+
+//        //we should only call static variables from the class itself (Car),
+//        //not from a variable containing an object from that class
+//
+//        car.totalCount = 1;
+//        System.out.println("Total count in car: " + car.totalCount);
+//        car.totalCount = 2;
+//        System.out.println("Total count in car after setting car2: " + car.totalCount);
+//        System.out.println("Total count in car2: " + car2.totalCount);
+//        System.out.println("Total count in Car class: " + Car.totalCount);
+
+
+
+
+
     }
 }
