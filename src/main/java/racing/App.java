@@ -39,7 +39,7 @@ public class App
 
 //        car.name = null;
 
-        car.accelerate(speed: 60, durationHours: 1);
+        car.accelerate( 60, 1);
 
         Car car2 = new Car(engine);
 
@@ -78,7 +78,7 @@ public class App
 //        method implementation from object's class not from variable's class
 
         hibridCar.setName("cheater");
-        HibridCar.accelerate(sped: 60, durationInHours: 1)
+        hibridCar.accelerate( 60, 1);
         System.out.println("Fuel level:" + hibridCar.getFuelLevel());
         System.out.println("Traveled distance:" + hibridCar.getTravelDistance());
 //      variable type decides what methods can be invoked
