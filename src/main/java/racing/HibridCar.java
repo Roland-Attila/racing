@@ -17,4 +17,8 @@ public class HibridCar extends Vehicle {
     protected HibridCar clone() throws CloneNotSupportedException {
         return new HibridCar();
     }
+    public void  fly(); {
+
+    }
+
 }
