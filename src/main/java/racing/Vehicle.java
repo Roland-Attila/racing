@@ -74,9 +74,10 @@ public class Vehicle {
 
     public static int getTotalCount() {
         return totalCount;
-
-
     }
 
+    public double accelerate (double speed) {
+        return accelerate(speed, durationInHours: 1)
+    }
 }
 
