@@ -5,20 +5,15 @@ import org.xml.sax.ext.Locator2;
 
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
         Engine engine = new Engine();
         engine.manufacturer = "Renault";
         engine.capacity = 1600;
 
-    // this
 
         Car car = new Car(engine);
         car.setName( "Audi" );
